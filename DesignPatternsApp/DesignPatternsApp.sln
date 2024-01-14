@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MachineFactoryHelper", "Mac
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FactoryDesignPattern", "FactoryDesignPattern\FactoryDesignPattern.csproj", "{6C9F9033-E0DA-4DA1-A55D-DE66E18CD434}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AbstractFactory", "AbstractFactory\AbstractFactory.csproj", "{A9D8B6DC-08F8-43E5-8481-BAE6016A4B95}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{6C9F9033-E0DA-4DA1-A55D-DE66E18CD434}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6C9F9033-E0DA-4DA1-A55D-DE66E18CD434}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6C9F9033-E0DA-4DA1-A55D-DE66E18CD434}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A9D8B6DC-08F8-43E5-8481-BAE6016A4B95}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A9D8B6DC-08F8-43E5-8481-BAE6016A4B95}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A9D8B6DC-08F8-43E5-8481-BAE6016A4B95}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A9D8B6DC-08F8-43E5-8481-BAE6016A4B95}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

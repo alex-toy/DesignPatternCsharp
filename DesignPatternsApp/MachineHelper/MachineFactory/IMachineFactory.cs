@@ -2,6 +2,6 @@
 {
     public interface IMachineFactory
     {
-        public abstract IMachine Create(int selectedMachine);
+        public abstract IMachine GetMachine(int selectedMachine);
     }
 }

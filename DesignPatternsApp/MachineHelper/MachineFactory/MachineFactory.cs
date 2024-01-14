@@ -4,7 +4,7 @@ namespace MachineHelper.MachineFactory
 {
     public class MachineFactory : IMachineFactory
     {
-        public IMachine Create(int selectedMachine)
+        public IMachine GetMachine(int selectedMachine)
         {
             IMachine newMachine;
             switch (selectedMachine)
