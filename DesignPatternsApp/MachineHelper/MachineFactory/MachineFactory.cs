@@ -6,7 +6,7 @@ namespace MachineHelper.MachineFactory
     {
         public IMachine Create(int selectedMachine)
         {
-            IMachine newMachine = null;
+            IMachine newMachine;
             switch (selectedMachine)
             {
                 case 0:
