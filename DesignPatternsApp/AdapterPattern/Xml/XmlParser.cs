@@ -1,4 +1,4 @@
-﻿using AdapterPattern;
+﻿using AdapterPattern.Xml;
 using System.Xml.Serialization;
 
 public class XmlParser<T> : IXmlParser<T>
@@ -10,13 +10,13 @@ public class XmlParser<T> : IXmlParser<T>
         _serializer = new XmlSerializer(typeof(T), new XmlRootAttribute(typeof(T).Name.ToLower()));
     }
 
-    public T Parse(string data)
+    public T XmlToObject(string data)
     {
         using TextReader reader = new StringReader(data);
         return (T)_serializer.Deserialize(reader);
     }
 
-    public string ConvertToXml(T obj)
+    public string ObjectToXml(T obj)
     {
         using StringWriter textWriter = new();
         _serializer.Serialize(textWriter, obj);
