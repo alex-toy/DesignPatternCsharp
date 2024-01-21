@@ -1,19 +1,23 @@
 ﻿using DecoratorOk.Cars;
+using DecoratorOk.Options;
 
 namespace DecoratorOk.Decorators
 {
-    public abstract class OptionDecorator : ICar
+    public class OptionDecorator<TOption> : ICar where TOption : IOption
     {
         public ICar Car { get; set; }
+        public List<TOption> Options { get; set; }
 
-        public virtual string GetDescription()
+        public string GetDescription()
         {
-            return Car.GetDescription();
+            string options = string.Join(", ", Options.Select(o => o.GetName()));
+            return Car.GetDescription() + ", " + options;
         }
 
-        public virtual int GetTotalPrice()
+        public int GetTotalPrice()
         {
-            return Car.GetTotalPrice();
+            var priceOptions = Options.Select(o => o.GetPrice()).Sum();
+            return Car.GetTotalPrice() + priceOptions;
         }
     }
 }

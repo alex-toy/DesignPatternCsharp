@@ -1,5 +1,8 @@
 # Design Patterns in C#
 
+In this project, I try to demonstrate the usefulness of design patterns. To do this, I first do the wrong way, thus emphasizing the trouble we get into. Then I use the rigth design pattern to solve the problem. 
+
+
 
 ## Creational Patterns
 
