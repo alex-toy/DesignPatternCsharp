@@ -21,4 +21,9 @@ Provide an interface for creating families of related or dependant objects witho
 
 ### Adapter Pattern
 Adapter is a structural design pattern that allows objects with incompatible interfaces to collaborate.
-<img src="/pictures/adapter.jpeg" title="factory"  width="900">
+<img src="/pictures/adapter.jpeg" title="adapter"  width="900">
+
+### Decorator Pattern
+ The Decorator allows you to modify an object dynamically. You would use it when you want the capabilities of inheritance with subclasses, but you need to add functionality at run time. It is more flexible than inheritance. The Decorator Design Pattern simplifies code because you add functionality using many simple classes. Also, rather than rewrite old code you can extend it with new code and that is always good.
+<img src="/pictures/decorator.jfif" title="factory"  width="900">
+
