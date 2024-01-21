@@ -28,5 +28,8 @@ Adapter is a structural design pattern that allows objects with incompatible int
 
 ### Decorator Pattern
  The Decorator allows you to modify an object dynamically. You would use it when you want the capabilities of inheritance with subclasses, but you need to add functionality at run time. It is more flexible than inheritance. The Decorator Design Pattern simplifies code because you add functionality using many simple classes. Also, rather than rewrite old code you can extend it with new code and that is always good.
-<img src="/pictures/decorator.jfif" title="factory"  width="900">
+<img src="/pictures/decorator.jfif" title="decorator"  width="900">
 
+### Facade Pattern
+The Facade pattern basically says that you should simplify your methods so that much of what is done is in the background. In technical terms you should decouple the client from the sub components needed to perform an operation.
+<img src="/pictures/facade.jfif" title="facade"  width="900">
