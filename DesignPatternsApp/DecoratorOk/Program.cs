@@ -1,32 +1,38 @@
 ﻿using DecoratorOk;
 using DecoratorOk.Cars;
 using DecoratorOk.Decorators;
+using DecoratorOk.Options;
 
 Console.WriteLine("Decorator Pattern OK");
 
 Model clioModel = new Model() { Name = "clio", Price = 3000 };
-List<Option> options = new List<Option>() {
-    new Option(){ Name = "central lock", Price = 250 },
-    new Option(){ Name = "turbo", Price = 250 },
-};
-Car car = new Car() { Model = clioModel, Options = options };
+Car car = new Car() { Model = clioModel };
 Console.WriteLine(car.GetDescription());
 Console.WriteLine($"Total price : {car.GetTotalPrice()}");
 
 
-List<Option> Aoptions = new List<Option>() {
-    new Option(){ Name = "rear camera", Price = 100 },
-    new Option(){ Name = "leather seats", Price = 100 },
+List<OptionA> Aoptions = new List<OptionA>() {
+    new OptionA(){ Name = "rear camera", Price = 100 },
+    new OptionA(){ Name = "leather seats", Price = 100 },
 };
 AOptionDecorator aOptionDecorator = new AOptionDecorator() { Car = car, AOptions = Aoptions };
 Console.WriteLine(aOptionDecorator.GetDescription());
 Console.WriteLine($"Total price : {aOptionDecorator.GetTotalPrice()}");
 
 
-List<Option> Boptions = new List<Option>() {
-    new Option(){ Name = "luxury option 1", Price = 870 },
-    new Option(){ Name = "luxury option 2", Price = 960 },
+List<OptionB> Boptions = new List<OptionB>() {
+    new OptionB(){ Name = "luxury option 1", Price = 870 },
+    new OptionB(){ Name = "luxury option 2", Price = 960 },
 };
 BOptionDecorator bOptionDecorator = new BOptionDecorator() { Car = aOptionDecorator, BOptions = Boptions };
 Console.WriteLine(bOptionDecorator.GetDescription());
 Console.WriteLine($"Total price : {bOptionDecorator.GetTotalPrice()}");
+
+
+List<OptionC> Coptions = new List<OptionC>() {
+    new OptionC(){ Name = "sport option 1", Price = 12 },
+    new OptionC(){ Name = "sport option 2", Price = 23 },
+};
+COptionDecorator cOptionDecorator = new COptionDecorator() { Car = bOptionDecorator, COptions = Coptions };
+Console.WriteLine(cOptionDecorator.GetDescription());
+Console.WriteLine($"Total price : {cOptionDecorator.GetTotalPrice()}");

@@ -1,4 +1,4 @@
-﻿namespace DecoratorOk
+﻿namespace DecoratorPatternWrong.Options
 {
     public class Option
     {

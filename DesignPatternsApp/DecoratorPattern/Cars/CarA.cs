@@ -1,10 +1,11 @@
 ﻿using DecoratorPattern;
+using DecoratorPatternWrong.Options;
 
 namespace DecoratorPatternWrong.Cars
 {
     public class CarA : Car
     {
-        public List<Option> AOptions { get; set; }
+        public List<OptionA> AOptions { get; set; }
 
         public int GetTotalPrice()
         {
@@ -13,8 +14,9 @@ namespace DecoratorPatternWrong.Cars
 
         public string GetDescription()
         {
-            string options = string.Join(", ", Options.Concat(AOptions).Select(o => o.Name));
-            return $"Model : {Model.Name} - Price : {GetTotalPrice()} - Options : {options}";
+            string options = string.Join(", ", Options.Select(o => o.Name));
+            string A_options = string.Join(", ", AOptions.Select(o => o.Name));
+            return $"Model : {Model.Name} - Price : {GetTotalPrice()} - Options : {options + A_options}";
         }
     }
 }

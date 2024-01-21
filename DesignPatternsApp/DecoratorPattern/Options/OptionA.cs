@@ -1,6 +1,6 @@
-﻿namespace DecoratorPattern
+﻿namespace DecoratorPatternWrong.Options
 {
-    public class Option
+    public class OptionA
     {
         public string Name { get; set; }
         public int Price { get; set; }

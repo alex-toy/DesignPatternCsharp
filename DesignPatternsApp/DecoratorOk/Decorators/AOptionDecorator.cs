@@ -1,10 +1,10 @@
-﻿using DecoratorOk.Cars;
+﻿using DecoratorOk.Options;
 
 namespace DecoratorOk.Decorators
 {
     public class AOptionDecorator : OptionDecorator
     {
-        public List<Option> AOptions { get; set; }
+        public List<OptionA> AOptions { get; set; }
 
         public override string GetDescription()
         {

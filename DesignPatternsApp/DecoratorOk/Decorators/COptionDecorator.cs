@@ -2,19 +2,19 @@
 
 namespace DecoratorOk.Decorators
 {
-    public class BOptionDecorator : OptionDecorator
+    public class COptionDecorator : OptionDecorator
     {
-        public List<OptionB> BOptions { get; set; }
+        public List<OptionC> COptions { get; set; }
 
         public override string GetDescription()
         {
-            string options = string.Join(", ", BOptions.Select(o => o.Name));
+            string options = string.Join(", ", COptions.Select(o => o.Name));
             return Car.GetDescription() + ", " + options;
         }
 
         public override int GetTotalPrice()
         {
-            var priceAOptions = BOptions.Select(o => o.Price).Sum();
+            var priceAOptions = COptions.Select(o => o.Price).Sum();
             return Car.GetTotalPrice() + priceAOptions;
         }
     }
