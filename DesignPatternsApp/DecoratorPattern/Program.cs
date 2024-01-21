@@ -13,10 +13,7 @@ List<Option> options = new List<Option>() {
 Car car = new Car() { Model = clioModel, Options = options };
 Console.WriteLine(car.GetDescription());
 
-options = new List<Option>() {
-    new Option(){ Name = "central lock", Price = 150 },
-    new Option(){ Name = "turbo", Price = 250 },
-};
+
 List<Option> Aoptions = new List<Option>() {
     new Option(){ Name = "rear camera", Price = 250 },
     new Option(){ Name = "leather seats", Price = 250 },
@@ -24,13 +21,10 @@ List<Option> Aoptions = new List<Option>() {
 CarA carA = new CarA() { Model = clioModel, Options = options, AOptions = Aoptions };
 Console.WriteLine(carA.GetDescription());
 
-options = new List<Option>() {
-    new Option(){ Name = "central lock", Price = 150 },
-    new Option(){ Name = "turbo", Price = 250 },
-};
-List<Option> ABoptions = new List<Option>() {
+
+List<Option> Boptions = new List<Option>() {
     new Option(){ Name = "rear camera", Price = 250 },
     new Option(){ Name = "leather seats", Price = 250 },
 };
-CarAB carAB = new CarAB() { Model = clioModel, Options = options, ABOptions = ABoptions };
+CarAB carAB = new CarAB() { Model = clioModel, Options = options, AOptions = Aoptions, BOptions = Boptions };
 Console.WriteLine(carAB.GetDescription());
