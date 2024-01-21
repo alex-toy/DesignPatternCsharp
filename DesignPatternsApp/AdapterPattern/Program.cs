@@ -1,8 +1,11 @@
 ﻿using AdapterPattern.FormatAdapter.Json;
+using AdapterPattern.PowerAdapter;
 
 Console.WriteLine("Adapter Pattern");
 
-FormatAdapter();
+//FormatAdapter();
+
+OutletAdapter();
 
 static void FormatAdapter()
 {
@@ -24,4 +27,18 @@ static void FormatAdapter()
     Note note = jsonParser.JsonToObject(xmlNote);
     string jsonNote = jsonParser.ObjectToJson(note);
     Console.WriteLine(jsonNote);
+}
+
+static void OutletAdapter()
+{
+    MaleOutlet maleOutlet = new MaleOutlet() { Sizes = new List<int> { 1, 2, 3, 4, 5 }, MaleConnectorCount = 4 };
+    FemaleOutlet femaleOutlet = new FemaleOutlet() { Size = 6, FemaleConnectorCount = 2, Outlet = maleOutlet };
+    Console.WriteLine($"Fits : {(femaleOutlet.Fit() ? "yes" : "no")}");
+
+    HybridOutlet hybridOutlet = new HybridOutlet() { Size = 3, FemaleConnectorCount = 2, MaleConnectorCount = 2 };
+    //femaleOutlet = new FemaleOutlet() { Size = 6, FemaleConnectorCount = 2, Outlet = hybridOutlet }; // doesn't compile
+    HybridOutletAdapter hybridOutletAdapter = new HybridOutletAdapter() { HybridOutlet = hybridOutlet };
+    femaleOutlet = new FemaleOutlet() { Size = 6, FemaleConnectorCount = 2, Outlet = hybridOutletAdapter };
+
+    Console.WriteLine($"Fits : {(femaleOutlet.Fit() ? "yes" : "no")}");
 }
