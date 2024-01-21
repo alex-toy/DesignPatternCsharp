@@ -1,4 +1,4 @@
-﻿namespace AdapterPattern.Json;
+﻿namespace AdapterPattern.FormatAdapter.Json;
 
 public interface IJsonParser<T>
 {

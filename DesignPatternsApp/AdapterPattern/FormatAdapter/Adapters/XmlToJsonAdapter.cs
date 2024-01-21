@@ -1,5 +1,5 @@
-﻿using AdapterPattern.Json;
-using AdapterPattern.Xml;
+﻿using AdapterPattern.FormatAdapter.Json;
+using AdapterPattern.FormatAdapter.Xml;
 
 public class XmlToJsonAdapter<T> : IJsonParser<T>
 {

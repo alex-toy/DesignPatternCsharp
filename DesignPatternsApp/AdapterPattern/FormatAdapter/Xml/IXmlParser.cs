@@ -1,4 +1,4 @@
-﻿namespace AdapterPattern.Xml
+﻿namespace AdapterPattern.FormatAdapter.Xml
 {
     public interface IXmlParser<T>
     {

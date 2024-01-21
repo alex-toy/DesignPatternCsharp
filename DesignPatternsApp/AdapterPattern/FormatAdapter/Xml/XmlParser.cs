@@ -1,4 +1,4 @@
-﻿using AdapterPattern.Xml;
+﻿using AdapterPattern.FormatAdapter.Xml;
 using System.Xml.Serialization;
 
 public class XmlParser<T> : IXmlParser<T>

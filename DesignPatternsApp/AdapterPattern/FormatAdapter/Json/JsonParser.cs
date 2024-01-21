@@ -1,6 +1,6 @@
 ﻿using System.Text.Json;
 
-namespace AdapterPattern.Json
+namespace AdapterPattern.FormatAdapter.Json
 {
     public class JsonParser<T> : IJsonParser<T>
     {
