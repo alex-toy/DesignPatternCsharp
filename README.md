@@ -32,4 +32,4 @@ Adapter is a structural design pattern that allows objects with incompatible int
 
 ### Facade Pattern
 The Facade pattern basically says that you should simplify your methods so that much of what is done is in the background. In technical terms you should decouple the client from the sub components needed to perform an operation.
-<img src="/pictures/facade.jfif" title="facade"  width="900">
+<img src="/pictures/facade.png" title="facade"  width="900">
