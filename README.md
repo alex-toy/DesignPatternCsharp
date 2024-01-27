@@ -1,6 +1,6 @@
 # Design Patterns in C#
 
-In this project, I try to demonstrate the usefulness of design patterns. To do this, I first do the wrong way, thus emphasizing the trouble we get into. Then I use the rigth design pattern to solve the problem. 
+In this project, I try to demonstrate the usefulness of design patterns. To do this, I first do the wrong way, thus emphasizing the trouble we get into. Then I use the right design pattern to solve the problem. 
 
 
 
@@ -33,3 +33,7 @@ Adapter is a structural design pattern that allows objects with incompatible int
 ### Facade Pattern
 The Facade pattern basically says that you should simplify your methods so that much of what is done is in the background. In technical terms you should decouple the client from the sub components needed to perform an operation.
 <img src="/pictures/facade.png" title="facade"  width="900">
+
+### Builder Pattern
+You use the builder design pattern when you want to have many classes help in the creation of an object. By having different classes build the object you can then easily create many different types of objects without being forced to rewrite code. The Builder pattern provides an alternative to the Abstract Factory design pattern when it comes to make complex objects.
+<img src="/pictures/builder.png" title="facade"  width="900">
