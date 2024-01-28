@@ -15,13 +15,15 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AbstractFactory", "Abstract
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AdapterPattern", "AdapterPattern\AdapterPattern.csproj", "{52DF5975-0FB8-4C14-A776-B5E0F426A4F6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DecoratorPatternWrong", "DecoratorPattern\DecoratorPatternWrong.csproj", "{FE326177-4EC5-4CB5-A732-857E70E8AEF4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DecoratorPatternWrong", "DecoratorPattern\DecoratorPatternWrong.csproj", "{FE326177-4EC5-4CB5-A732-857E70E8AEF4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DecoratorOk", "DecoratorOk\DecoratorOk.csproj", "{F9F066B0-602D-411D-AEC0-158E4B94D590}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DecoratorOk", "DecoratorOk\DecoratorOk.csproj", "{F9F066B0-602D-411D-AEC0-158E4B94D590}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FacadeWrong", "Facade\FacadeWrong.csproj", "{0FA88765-FBF9-4F61-9607-CA30B1974701}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Facade", "Facade\Facade.csproj", "{F9DD87EF-A099-4649-9181-92017CDCDDE7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BuilderOk", "BuilderOk\BuilderOk.csproj", "{E3B352DB-02D4-45E4-8D80-0E6C1A12398A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -69,6 +71,10 @@ Global
 		{F9DD87EF-A099-4649-9181-92017CDCDDE7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F9DD87EF-A099-4649-9181-92017CDCDDE7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F9DD87EF-A099-4649-9181-92017CDCDDE7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E3B352DB-02D4-45E4-8D80-0E6C1A12398A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E3B352DB-02D4-45E4-8D80-0E6C1A12398A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E3B352DB-02D4-45E4-8D80-0E6C1A12398A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E3B352DB-02D4-45E4-8D80-0E6C1A12398A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -1,9 +1,20 @@
-﻿namespace BuilderOk
+﻿using BuilderOk.Options;
+
+namespace BuilderOk
 {
     public class Car
     {
-        public List<OptionA> OptionA { get; set; }
-        public List<OptionB> OptionB { get; set; }
-        public List<OptionC> OptionC { get; set; }
+        public string Model { get; set; }
+        public List<Option> Options { get; set; }
+
+        public void AddOption(Option option)
+        {
+            Options.Add(option);
+        }
+
+        public void ToString(Option option)
+        {
+            Console.WriteLine($"Name : {Model} - Options : {string.Join(", ", Options.Select(o => o.Name))}");
+        }
     }
 }
