@@ -18,6 +18,10 @@ Define an interface for creating an object, but let subclasses decide which clas
 Provide an interface for creating families of related or dependant objects without specifying their concrete classes. Encapsulate a group of individual factories that have a common theme. Concrete classes are never mentionned.
 <img src="/pictures/abstractfactory.png" title="abtract factory"  width="900">
 
+### Builder Pattern
+You use the builder design pattern when you want to construct complex objects step by step. The pattern allows you to produce different types and representations of an object using the same construction code. The Builder pattern provides an alternative to the Abstract Factory design pattern when it comes to make complex objects. 
+<img src="/pictures/builder.webp" title="facade"  width="900">
+
 
 
 ## Structural Patterns
@@ -34,6 +38,10 @@ Adapter is a structural design pattern that allows objects with incompatible int
 The Facade pattern basically says that you should simplify your methods so that much of what is done is in the background. In technical terms you should decouple the client from the sub components needed to perform an operation.
 <img src="/pictures/facade.png" title="facade"  width="900">
 
-### Builder Pattern
-You use the builder design pattern when you want to have many classes help in the creation of an object. By having different classes build the object you can then easily create many different types of objects without being forced to rewrite code. The Builder pattern provides an alternative to the Abstract Factory design pattern when it comes to make complex objects.
-<img src="/pictures/builder.webp" title="facade"  width="900">
+
+
+## Behavioral Patterns
+
+### Command Pattern
+Command turns a request into a stand-alone object that contains all information about the request. This transformation lets you pass requests as a method arguments, delay or queue a request’s execution, and support undoable operations.
+<img src="/pictures/adapter.jpeg" title="adapter"  width="900">
