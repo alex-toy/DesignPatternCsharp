@@ -8,23 +8,36 @@
         {
             _store = new ()
             {
-                new Article(){Name = "shoes", Quantity = 23 },
-                new Article(){Name = "pants", Quantity = 43 },
-                new Article(){Name = "shirt", Quantity = 12 },
-                new Article(){Name = "dress", Quantity = 86 },
+                new Article(){ Id = 1, Name = "shoes", Quantity = 23 },
+                new Article(){ Id = 2, Name = "pants", Quantity = 43 },
+                new Article(){ Id = 3, Name = "shirt", Quantity = 12 },
+                new Article(){ Id = 4, Name = "dress", Quantity = 86 },
             };
         }
 
-        public bool IsInStore(Article article)
+        public bool ContainsSufficient(Article article, int quantity)
         {
-                return _store.Find(s => s.Equals(article))?.Quantity > 0;
+                return _store.Find(a => a.Id.Equals(article.Id))?.Quantity > quantity;
         }
 
-        public void Bye(Article article)
+        public void Buy(Article article, int quantity)
         {
-            Article? articleInStore = _store.Find(s => s.Equals(article));
+            Article? articleInStore = _store.Find(a => a.Id.Equals(article.Id));
             if (articleInStore is null) return;
-            articleInStore.Quantity--;
+            articleInStore.Quantity -= quantity;
+        }
+
+        public void Supply(Article article, int quantity)
+        {
+            Article? articleInStore = _store.Find(a => a.Id.Equals(article.Id));
+            if (articleInStore is null) return;
+            articleInStore.Quantity += quantity;
+        }
+
+        public void GetRemainingArticleCount(Article article)
+        {
+            Article? articleInStore = _store.Find(a => a.Id.Equals(article.Id));
+            Console.WriteLine($"It remains {articleInStore.Quantity} {articleInStore.Name} in store.");
         }
     }
 }

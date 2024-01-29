@@ -1,6 +1,6 @@
 ﻿namespace CommandOk.Commands
 {
-    public class ByeArticle : ICommand
+    public class SupplyArticle : ICommand
     {
         public Article Article { get; set; }
         public Store Store { get; set; }
@@ -8,12 +8,13 @@
 
         public bool CanExecute()
         {
-            return Store.ContainsSufficient(Article, Quantity);
+            return true;
         }
 
         public void Execute()
         {
-            Store.Buy(Article, Quantity);
+            Store.Supply(Article, Quantity);
         }
+
     }
 }
