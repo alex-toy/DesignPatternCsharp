@@ -25,7 +25,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Facade", "Facade\Facade.csp
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BuilderOk", "BuilderOk\BuilderOk.csproj", "{E3B352DB-02D4-45E4-8D80-0E6C1A12398A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CommandOk", "CommandOk\CommandOk.csproj", "{BC9DB4AA-7863-44CD-8D74-04D41AA23ADD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CommandOk", "CommandOk\CommandOk.csproj", "{BC9DB4AA-7863-44CD-8D74-04D41AA23ADD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChainOfResponsabilityOk", "ChainOfResponsabilityOk\ChainOfResponsabilityOk.csproj", "{21916D63-BCEF-42E9-B95F-2AA7D70D8BC3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -81,6 +83,10 @@ Global
 		{BC9DB4AA-7863-44CD-8D74-04D41AA23ADD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BC9DB4AA-7863-44CD-8D74-04D41AA23ADD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BC9DB4AA-7863-44CD-8D74-04D41AA23ADD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{21916D63-BCEF-42E9-B95F-2AA7D70D8BC3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{21916D63-BCEF-42E9-B95F-2AA7D70D8BC3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{21916D63-BCEF-42E9-B95F-2AA7D70D8BC3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{21916D63-BCEF-42E9-B95F-2AA7D70D8BC3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

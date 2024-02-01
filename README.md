@@ -44,10 +44,10 @@ The Facade pattern basically says that you should simplify your methods so that 
 
 ### Command Pattern
 Command turns a request into a stand-alone object that contains all information about the request. This transformation lets you pass requests as a method arguments, delay or queue a request’s execution, and support undoable operations.
-<img src="/pictures/command.jpeg" title="command"  width="900">
+<img src="/pictures/command.png" title="command"  width="900">
 
 ### Chain of Responsability Pattern
-Chain of responsability lets you pass requests along a chain of handlers. Upon receiving a request, each handler decides either to process the request or to pass it to the next handler in the chain.
-<img src="/pictures/chain.jpeg" title="chain of responsability"  width="900">
+Chain of responsability lets you pass requests along a chain of handlers. Upon receiving a request, each handler decides either to process the request or to pass it to the next handler in the chain. It is very used a lot in ASP.NET with middlewares.
+<img src="/pictures/chain.png" title="chain of responsability"  width="900">
 
 
