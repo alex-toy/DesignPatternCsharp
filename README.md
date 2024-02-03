@@ -38,6 +38,10 @@ Adapter is a structural design pattern that allows objects with incompatible int
 The Facade pattern basically says that you should simplify your methods so that much of what is done is in the background. In technical terms you should decouple the client from the sub components needed to perform an operation.
 <img src="/pictures/facade.png" title="facade"  width="900">
 
+### Bridge Pattern
+The Bridge pattern lets you split a large class or a set of closely related classes into two separate hierarchies—abstraction and implementation, which can be developed independently of each other.
+<img src="/pictures/bridge.png" title="bridge"  width="900">
+
 
 
 ## Behavioral Patterns
