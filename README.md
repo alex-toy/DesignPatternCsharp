@@ -39,7 +39,7 @@ The Facade pattern basically says that you should simplify your methods so that 
 <img src="/pictures/facade.png" title="facade"  width="900">
 
 ### Bridge Pattern
-The Bridge pattern lets you split a large class or a set of closely related classes into two separate hierarchies—abstraction and implementation, which can be developed independently of each other.
+The Bridge pattern lets you split a large class or a set of closely related classes into two separate hierarchies—abstraction and implementation, which can be developed independently of each other. It allows to abide by the "O" in SOLID principles. When a class is to evolve by way of inheritance according to several dimensions, it will unavoidably grow exponentially. The Bridge pattern attempts to solve this problem by switching from inheritance to the object composition. What this means is that you extract one of the dimensions into a separate class hierarchy, so that the original classes will reference an object of the new hierarchy, instead of having all of its state and behaviors within one class.
 <img src="/pictures/bridge.png" title="bridge"  width="900">
 
 
