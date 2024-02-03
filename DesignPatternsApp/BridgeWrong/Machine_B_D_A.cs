@@ -1,6 +1,12 @@
-﻿namespace BridgeWrong
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace BridgeWrong
 {
-    public class Machine_B_D_C : Machine
+    internal class Machine_B_D_A : Machine
     {
         public double TaxCoefficient { get; set; }
 
@@ -16,7 +22,7 @@
 
         public override double CalculateInsuranceFee()
         {
-            return BasePrice / 13.0;
+            return BasePrice / 12.0;
         }
     }
 }

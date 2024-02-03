@@ -10,7 +10,11 @@ machine = new Machine_A_B_A() { BasePrice = 5000, Name = "Fiscal A - Environment
 machine.ToString();
 CanDrive(machine);
 
-machine = new Machine_B_D_C() { BasePrice = 5000, Name = "Fiscal B - Environment D - Insurance fee C" };
+machine = new Machine_B_D_C() { BasePrice = 5000, Name = "Fiscal B - Environment D - Insurance fee C", TaxCoefficient = 0.12 };
+machine.ToString();
+CanDrive(machine);
+
+machine = new Machine_B_D_A() { BasePrice = 5000, Name = "Fiscal B - Environment D - Insurance fee A", TaxCoefficient = 0.12 };
 machine.ToString();
 CanDrive(machine);
 

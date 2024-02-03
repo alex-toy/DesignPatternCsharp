@@ -31,6 +31,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ChainOfResponsabilityOk", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BridgeWrong", "BridgeWrong\BridgeWrong.csproj", "{AE7593BF-F99A-4D17-984D-8D74E82A7BDD}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BridgeOk", "BridgeOk\BridgeOk.csproj", "{3AAAE590-CC3F-406E-9C39-25C3E43FA2F2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -93,6 +95,10 @@ Global
 		{AE7593BF-F99A-4D17-984D-8D74E82A7BDD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AE7593BF-F99A-4D17-984D-8D74E82A7BDD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AE7593BF-F99A-4D17-984D-8D74E82A7BDD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3AAAE590-CC3F-406E-9C39-25C3E43FA2F2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3AAAE590-CC3F-406E-9C39-25C3E43FA2F2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3AAAE590-CC3F-406E-9C39-25C3E43FA2F2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3AAAE590-CC3F-406E-9C39-25C3E43FA2F2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
