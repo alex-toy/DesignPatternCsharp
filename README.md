@@ -42,6 +42,10 @@ The Facade pattern basically says that you should simplify your methods so that 
 The Bridge pattern lets you split a large class or a set of closely related classes into two separate hierarchies—abstraction and implementation, which can be developed independently of each other. It allows to abide by the "O" in SOLID principles. When a class is to evolve by way of inheritance according to several dimensions, it will unavoidably grow exponentially. The Bridge pattern attempts to solve this problem by switching from inheritance to the object composition. What this means is that you extract one of the dimensions into a separate class hierarchy, so that the original classes will reference an object of the new hierarchy, instead of having all of its state and behaviors within one class.
 <img src="/pictures/bridge.png" title="bridge"  width="900">
 
+### Proxy Pattern
+Proxy is a structural design pattern that lets you provide a substitute or placeholder for another object. A proxy controls access to the original object, allowing you to perform something either before or after the request gets through to the original object.
+<img src="/pictures/proxy.png" title="proxy"  width="900">
+
 
 
 ## Behavioral Patterns
